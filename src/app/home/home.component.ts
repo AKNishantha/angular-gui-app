@@ -48,10 +48,8 @@ export class HomeComponent implements OnInit {
   uploadFile(file) {
     const formData = new FormData();
     formData.append('image', file.data);
-    this.isLoading = true;
     this.homeService.upload(formData).subscribe({
       next: result => {
-        this.isLoading = true;
         if (result['statusCode'] === 200) {
           this.resource = 'Image uploaded successfully';
         } else {
