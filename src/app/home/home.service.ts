@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class HomeService {
 
-  SERVER_URL = 'https://azure-redis-cache-app.azurewebsites.net/file/upload';
+  SERVER_URL = 'https://uokseAzureStudent.azurefd.net/file/upload';
 
   constructor(private httpClient: HttpClient) {
   }

@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   }
 
   studentGet() {
-    return this.http.get('https://azure-redis-cache-app.azurewebsites.net/azurestudent/get');
+    return this.http.get('https://uokseAzureStudent.azurefd.net/azurestudent/get');
   }
 
   loadStudentInformation() {
